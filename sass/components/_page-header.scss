@@ -1,0 +1,116 @@
+header .logo {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  display: flex;
+  margin-right: 93px;
+}
+
+header .logo-contrast {
+  color: $selected-text-color;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.navigation {
+  display: flex;
+
+  & li {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  & a {
+    font-family: $font-family-main;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active {
+      color: $selected-text-color;
+    }
+  }
+
+  & .active .current-link {
+    color: $selected-text-color;
+    position: relative;
+    display: block;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      height: 4px;
+      width: 100%;
+      background-color: $selected-text-color;
+      border-radius: 4px;
+    }
+  }
+}
+
+header address {
+  display: flex;
+  margin-left: auto;
+  font-family: $font-family-main;
+
+  & ul {
+    display: flex;
+  }
+  & li {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  & a {
+    font-family: $font-family-main;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: $minor-text-color;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $selected-text-color;
+    }
+  }
+}
+
+.mail {
+  fill: currentColor;
+}
+.tel {
+  fill: currentColor;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}

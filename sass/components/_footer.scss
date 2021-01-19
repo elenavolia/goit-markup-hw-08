@@ -1,0 +1,154 @@
+footer {
+  background-color: $footer-background-color;
+}
+.page-footer {
+  align-items: baseline;
+  margin-left: 70px;
+}
+
+.footer-items {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+
+  & a {
+    color: $footer-adress-color;
+  }
+
+  & ul {
+    align-items: baseline;
+    font-family: $font-family-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: $contrast-text-color;
+
+    margin-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  & .logo {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $contrast-text-color;
+  }
+
+  & .logo-contrast {
+    color: $selected-text-color;
+  }
+}
+
+h6 {
+  font-family: $font-family-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $contrast-text-color;
+  margin-bottom: 20px;
+}
+
+.subscription {
+  margin-top: 12px;
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+
+  & .input-sub {
+    display: flex;
+  }
+}
+
+.subscription .email {
+  display: block;
+  margin-right: 12px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: $white;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-style: 400;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription .sub-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  justify-content: center;
+
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+  }
+}
+
+footer .sm-item .sm-link {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+footer .sm-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .sm {
+  display: flex;
+}

@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .title {
+        font-family: "Tangerine", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Making the Web Beautiful!</h1>
+
+    <div role="group">
+      <p>Выберите цвет футболки:</p>
+    
+      <label for="color-1">Красный</label>
+      <input id="color-1" name="color" type="radio" value="red" checked />
+    
+      <label for="color-2">Белый</label>
+      <input id="color-2" name="color" type="radio" value="white" />
+    
+      <label for="color-3">Зелёный</label>
+      <input id="color-3" name="color" type="radio" value="green" />
+    </div>
+
+    <label for="color">Цвет</label>
+    
+    <input id="color" name="color" type="color" />
+
+    <select name="month">
+      <optgroup label="Лето">
+        <option value="s6">Июнь</option>
+        <option value="s7">Июль</option>
+        <option value="s8">Август</option>
+      </optgroup>
+    
+      <optgroup label="Осень">
+        <option value="s9">Сентябрь</option>
+        <option value="s10">Октябрь</option>
+        <option value="s11">Ноябрь</option>
+      </optgroup>
+    </select>
+
+    <label for="branch">Отделение:</label>
+    <input type="text" name="branch" id="branch" list="codes" />
+    
+    <datalist id="codes">
+      <option value="3600">Шевченковский район</option>
+      <option value="7493">Железоугорский район</option>
+      <option value="2701">Центральный район</option>
+      <option value="5692">Зелёногорский район</option>
+    </datalist>
+  </body>
+</html>

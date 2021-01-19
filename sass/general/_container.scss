@@ -1,0 +1,18 @@
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px auto 0px auto;
+
+  header & {
+    background-color: $section-background-color;
+
+    display: flex;
+    align-items: center;
+  }
+  header &,
+  footer & {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
