@@ -15,18 +15,21 @@
     <title>Студия</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header class="page-header">
+      <div class="container header-container">
         <a class="logo" href="index.html" lang="en">
           <span class="logo-contrast">Web</span>Studio</a
         >
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-          <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-button__icon-menu" href="./images/icon/sprite.svg#menu"></use>
-            <use class="menu-button__icon-menu-close" href="./images/icon/sprite.svg#menu-close"></use>
-          </svg>
-        </button>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="menu-button__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="menu-button__icon-menu" href="./images/menu.svg"></use>
+          <use class="menu-button__icon-menu-close" href="./images/sprite.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <div class="menu-main" id="menu-main" data-menu">
         <nav>
+          
           <ul class="navigation">
             <li class="active">
               <a class="current-link" href="index.html">Студия</a>
@@ -55,6 +58,8 @@
             </li>
           </ul>
         </address>
+      </div>
+        
       </div>
     </header>
     <main>
